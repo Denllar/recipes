@@ -7,7 +7,7 @@ $user = currentUser();
 ?>
 
 <!DOCTYPE html>
-<html lang="ru" data-theme="light">
+<html lang="ru" data-theme="dark">
 <?php include_once __DIR__ . '/components/head.php'?>
 <body>
 

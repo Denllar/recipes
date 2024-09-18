@@ -5,7 +5,7 @@ checkGuest();
 ?>
 
 <!DOCTYPE html>
-<html lang="ru" data-theme="light">
+<html lang="ru" data-theme="dark">
 <?php include_once __DIR__ . '/components/head.php'?>
 <body>
 
@@ -17,7 +17,7 @@ checkGuest();
     <?php endif; ?>
 
     <label for="email">
-        Имя
+        Почта
         <input
             type="text"
             id="email"
@@ -47,7 +47,7 @@ checkGuest();
     >Продолжить</button>
 </form>
 
-<p>У меня еще нет <a href="/register.php">аккаунта</a></p>
+<p>У меня еще нет <a href="/recipes/register.php">аккаунта</a></p>
 
 <?php include_once __DIR__ . '/components/scripts.php' ?>
 </body>

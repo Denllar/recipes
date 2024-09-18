@@ -9,21 +9,21 @@ if (empty($email) || !filter_var($email, FILTER_VALIDATE_EMAIL)) {
     setOldValue('email', $email);
     setValidationError('email', 'Неверный формат электронной почты');
     setMessage('error', 'Ошибка валидации');
-    redirect('/');
+    redirect('/recipes');
 }
 
 $user = findUser($email);
 
 if (!$user) {
     setMessage('error', "Пользователь $email не найден");
-    redirect('/');
+    redirect('/recipes');
 }
 
 if (!password_verify($password, $user['password'])) {
     setMessage('error', 'Неверный пароль');
-    redirect('/');
+    redirect('/recipes');
 }
 
 $_SESSION['user']['id'] = $user['id'];
 
-redirect('/home.php');
+redirect('/recipes/home.php');

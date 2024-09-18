@@ -1,6 +1,6 @@
 # Регистрация и авторизация на PHP
 
-#### HTML шаблон находится в ветке [layout](https://github.com/AreaWeb-Hub/login-and-register-new/tree/layout)
+#### HTML шаблон находится в ветке [layout](https://github.com/AreaWeb-Hub/recipes/tree/layout)
 
 ### База данных
 

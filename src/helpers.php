@@ -116,19 +116,19 @@ function currentUser(): array|false
 function logout(): void
 {
     unset($_SESSION['user']['id']);
-    redirect('/');
+    redirect('/recipes');
 }
 
 function checkAuth(): void
 {
     if (!isset($_SESSION['user']['id'])) {
-        redirect('/');
+        redirect('/recipes/home.php');
     }
 }
 
 function checkGuest(): void
 {
     if (isset($_SESSION['user']['id'])) {
-        redirect('/home.php');
+        redirect('/recipes/home.php');
     }
 }
